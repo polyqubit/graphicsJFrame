@@ -1,15 +1,15 @@
 import java.util.*;
+import java.awt.*;
 import javax.swing.*;
-import start.*;
-public class starter {
-
+//import start.*;
+public class starter extends Canvas {
 	public static void main(String[] args) {
-        //Schedule a job for the event-dispatching thread:
-        //creating and showing this application's GUI.
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                SwingTest.createAndShowGUI();
-            }
-        });
+		DisplayGraphics m = new DisplayGraphics();
+        JFrame f=new JFrame();  
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.add(m);  
+        f.setSize(400,400);  
+        //f.setLayout(null);  
+        f.setVisible(true);  
     }
 }
